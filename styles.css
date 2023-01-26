@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+}
+#board{
+    background-color: blue;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+#player{
+  
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 190px;
+    left: 80px;
+  
+}
+#player img{
+    
+    width: 70px;
+    height: 70px;
+
+    bottom: 70px;
+}
+#background img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.playerJump{
+    animation: playerJump 1s linear;
+}
+@keyframes playerJump {
+ 0%{
+    bottom: 190px;
+ }
+ 45%, 55%{
+    bottom: 300px;
+ }
+}
